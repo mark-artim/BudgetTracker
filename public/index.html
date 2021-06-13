@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="icons/icon-192x192.png" type="image/x-icon">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 
   <title>Budget Tracker</title>
@@ -19,10 +20,12 @@
     </div>
 
     <div class="form">
-      <input type="text" id="t-name" placeholder="Name of transaction" />
-      <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+      <input type="text" id="t-name" class="m-2" placeholder="Name of transaction" />
+      <br>
+      <input type="number" min="0" id="t-amount" class="m-2" placeholder="Transaction amount" />
+      <br>
+      <button id="add-btn" class="btn-primary"><i class="fa fa-plus buttons"></i> Add Funds</button>
+      <button id="sub-btn" class="btn-primary"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
     </div>
 
@@ -43,5 +46,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="index.js"></script>
+  <script src="db.js"></script>
 </body>
 </html>

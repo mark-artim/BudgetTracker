@@ -15,7 +15,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+// OLD "mongodb://localhost/budget"
+
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb+srv://appadmin:password_12345@cluster0.bf1i0.mongodb.net/budgetTrackerDb?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
